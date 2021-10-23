@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>20/11 NK</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -84,6 +87,7 @@
   .links a.active,
   .links a:hover
   {
+    font-family: Arial, Helvetica, sans-serif;
     color: #0b0235;
     background: #ffffff;
   }
@@ -174,8 +178,9 @@
   }
   .section-padding
   {
-    padding: 80px 0;
+    padding: 150px 0;
     background: #fefefe;
+    
   }
   .grid
   {
@@ -255,6 +260,7 @@
       padding: 0.4rem;
     }
   }
+  
 </style>
 <body>
   <nav>
@@ -266,8 +272,8 @@
         <ul>
           <li><a href="#" class="active">Trang chủ</a></li>
           <li><a href="#about">Thiệp chúc</a></li>
-          <li><a href="#">Nhóm 1</a></li>
-          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#gioithieu">Nhóm 1</a></li>
+          <li><a href="#gioithieu">Liên hệ</a></li>
         </ul>
       </div>
       <div class="hamburger-menu">
@@ -286,54 +292,82 @@
   <section id="about" class="section-padding">
     <div class="container grid">
       <div class="left-content">
-        <h4>The versatile design of the Cragsmith offers easy access to the contents from both the top and rear insert.</h4>
+        <h4 style="text-align: center;">Thiệp chúc mừng 20-11 cho thầy cô NK <3 </h4>
       </div>
-      <div class="right-content">
+      <!--Test letter-->
+      <div id="flip-card">
+        <div id="flip-card-inner">
+          <div id="flip-card-front">
+            <div id="stamp">
+              <img src="https://i.ibb.co/RQFFVJC/Paper-map-bro.png" />
+              <!-- Stock image hosted on imgbb -->
+            </div>
+            <div id="Name">Julie Andrews</div>
+          </div>
+          <div id="flip-card-back">
+            <div class="lid" id="one">
+              <p id="companyName">Wright Brothers</p>
+            </div>
+            <div class="lid" id="two"></div>
+            <div id="envelope"></div>
+            <div id="letter">
+              <img width="85%" height="auto" src="images/frame3.png" />
+              <p id="message">
+                Please Join us <br />to celebrate the thirteeth anniversary of
+  
+                <br />
+                <br />
+                <br />
+                <span
+                  style="
+                    margin: 20px;
+                    font-size: 25px;
+                    font-style: italic;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 10;
+                  "
+                >
+                  Wright Productions
+                </span>
+                <br />
+                <br />
+                <br />
+  
+                March First, Twenty Twenty ONe. At one in the afternoon
+                <br />
+                The sesattle Hilton<br />
+                Seattle, WA
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <!--    <div class="right-content">
         <img src="images/about-1.jpg" alt="">
-      </div>
+      </div> -->
     </div>
+    <h3 class="heading" style="text-align: center; margin-top:90px;">Video chúc mừng: </h3>
+    <div id="video" style="margin-top:20px; padding-left:30%;"><iframe width="560" height="315" src="https://www.youtube.com/embed/tLORqHj1tP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+        <h3 class="heading" style="text-align: center; margin-top:90px;">Phòng học online</h3>
     <div class="container grid">
       <div class="left-content">
-        <h5 class="heading">Durable fabric and foam inserts</h5>
-        <p>Sturdy nylon with thick full foam padding to protect your gear 360 °</p>
+        <div> <object type="text/html" data="https://my-room-in-3d.vercel.app/" width="880px" height="500px" style="overflow:auto;border:2px ridge blue; margin-left:165px;"> </object> </div>
       </div>
-      <div class="right-content">
-        <h5 class="heading">Double opening</h5>
-        <p>U-shaped closure simplifies access from above; the rear insert opens to offer access to the main compartment</p>
-      </div>
-    </div>
-    <div class="container grid">
-      <div class="left-content">
-        <img src="images/about-2.jpg" alt="">
-      </div>
-      <div class="right-content">
-        <img src="images/about-3.jpg" alt="">
-      </div>
-    </div>
-    <div class="container grid">
-      <div class="left-content">
-        <h5 class="heading">Elasticated side pockets</h5>
-        <p>Roomy external stretch pockets for water bottles or tourist guides</p>
-      </div>
-      <div class="right-content">
-        <h5 class="heading">100% enveloping and flexible</h5>
-        <p>2.5cm recycled nylon; aluminum buckle with anodized anti-corrosion treatment</p>
-      </div>
-    </div>
-    <div class="container grid">
-      <div class="left-content">
-        <img src="images/about-4.jpg" alt="">
-      </div>
-      <div class="right-content">
-        <h4>100% nylon (50% recycled, 50% remaining high strength) 251g / m² 630 denier plain weave fabric.</h4>
+
       </div>
     </div>
   </section>
   <footer>
-    <div class="container">
-      <a href="#">
+    <div class="container" id="gioithieu">
+      <a href="#" >
         <img src="images/logo.png" alt="">
       </a>
+    <br> </br>
+      <a href="https://fb.com/phannnxrum" target="_blank> <p style="color:#fefefe; text-align:center; margin-top:12px;">Liên hệ FB: phannnxrum</p> </a>
     </div>
   </footer>
    <script>
